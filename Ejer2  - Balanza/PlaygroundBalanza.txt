@@ -1,0 +1,28 @@
+"==============================================="
+" PLAYGROUND DE FUNCIONES"
+balanza := Balanza new.
+producto := Producto new.
+producto descripcion: 'Crema'.
+producto precioPorKilo: 43.
+producto peso: 0.25.
+balanza agregarProducto: producto.
+producto := Producto new.
+producto descripcion: 'Queso'.
+producto precioPorKilo: 10.
+producto peso: 2.
+balanza agregarProducto: producto.
+balanza precioTotal.
+balanza pesoTotal.
+balanza cantidadDeProductos.
+balanza emitirTicket.
+"==============================================="
+" TEST DE BALANZA"
+Metacello new
+   baseline: 'BalanzaElectronicaSkeleton';
+   repository: 'bitbucket://lifia-oop/practicas-objetos-1';
+   load.
+"==============================================="
+" PARTE PARA ANALIZAR EL TICKET DE FORMA GRAFICA"
+interfaz := BalanzaComposableModel new.
+interfaz balanza: Balanza new.
+interfaz openWithSpec.
