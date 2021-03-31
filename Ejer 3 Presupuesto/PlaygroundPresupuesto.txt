@@ -1,0 +1,22 @@
+"=================================================================="
+"=========================CARGA DE TEST============================"
+Metacello new
+   baseline: 'PresupuestoSkeleton';
+   repository: 'bitbucket://lifia-oop/practicas-objetos-1';
+   load.
+
+"=================================================================="
+"=====================PLAYGROUN DE PRUEBA=========================="
+presu := Presupuesto nuevoConCliente: 'lucas'.
+
+itemA := Item nuevoConDetalle: 'coca' ConCosto: 50  YCantidad: 1.
+itemB := Item nuevoConDetalle: 'pepsi' ConCosto: 50  YCantidad: 2.
+itemC := Item nuevoConDetalle: '7up' ConCosto: 50  YCantidad: 1.
+
+presu agregarItem: itemA.
+presu agregarItem: itemB.
+presu agregarItem: itemC.
+
+itemB costo.
+
+presu calcularTotal. 
