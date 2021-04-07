@@ -1,0 +1,30 @@
+
+m1:= Mamifero conNombre:'Elsa' UnaEspecie:'Pantera Rosa' yNacioElDia:(Date newDay:01month:11year:1999).
+m2:= Mamifero conNombre:'Scar' UnaEspecie:'Pantera Rosa' yNacioElDia:(Date newDay:12month:01year:1997).
+m3:= Mamifero conNombre:'Melaquides' UnaEspecie:'Pantera Rosa' yNacioElDia:(Date newDay:30month:09year:1998).
+m4:= Mamifero conNombre:'Nala' UnaEspecie:'Pantera Rosa' yNacioElDia:(Date newDay:07month:04year:1998).
+
+m5:= Mamifero conNombre:'SoloComoLocoMalo' UnaEspecie:'Pantera Rosa' yNacioElDia:(Date newDay:07month:04year:1998).
+
+padre:= Mamifero conNombre:'Mufasa' UnaEspecie:'Pantera Rosa' yNacioElDia:(Date newDay:01month:11year:2005).
+madre:= Mamifero conNombre:'Sarabi' UnaEspecie:'Pantera Rosa' yNacioElDia:(Date newDay:01month:11year:2003).
+
+padre padre:m3.
+padre madre:m4.
+
+madre padre:m2.
+madre madre:m1.
+
+alexa:= Mamifero conNombre:'Alexa' UnaEspecie:'Pantera Rosa' yNacioElDia:(Date newDay:01month:11year:2005).
+
+alexa madre: madre.
+alexa padre: padre.
+
+alexa abuelaMaterno identificador.
+
+alexa tieneAncestro: m5.
+
+Metacello new
+   baseline: 'GenealogiaAnimalSkeleton';
+   repository: 'bitbucket://lifia-oop/practicas-objetos-1';
+   load.
