@@ -1,0 +1,16 @@
+
+f:= Farola new.
+f1:= Farola new.
+f2:= Farola new.
+
+f pairWithNeighbor: f1.
+f pairWithNeighbor:f2.
+
+f turnOff
+
+f isOn
+
+Metacello new
+   baseline: 'FarolasSkeleton';
+   repository: 'bitbucket://lifia-oop/practicas-objetos-1';
+   load.
