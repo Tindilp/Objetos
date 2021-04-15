@@ -12,3 +12,10 @@
 
 ### a)  Liste los métodos que son ejecutados como resultado del envío del último mensaje (por ejemplo, método #aportes de la clase X, ...) 
 ### b)  Responda qué retorna la última expresión en cada caso  
+
+
+La primera expresion nos devuelve 50, ya que el gerente usa su poropio metodo aportes y calcula su aporte a traves de su montoBasico
+
+En la segunda expresion nos devuelve 1150, esto sucede porque Gerente nos pide calcularSueldo, al no tener este metodo, lo ira a buscar a la clase padre, la cual es EmpleadoJerarquico, en esa clase encuentra el mensaje calcularSueldo y a partir de ahi lo comienza a reasolver
+
+
