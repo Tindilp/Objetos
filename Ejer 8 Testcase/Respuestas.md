@@ -10,7 +10,14 @@
 
 ### Ahora responda:
 ### 1. Para implementar los tests tuvo que definir una nueva clase: ¿De qué clase es subclase?
+
+    Es sublcalase de TestCase
+    
 ### 2. Para hacer comprobaciones tuvo que enviar a "self" los mensajes #assert:equals: , #assert: y #deny: ¿Dónde están implementados los métodos que corresponden a esos mensajes? ¿Por qué los entiende su objeto si usted nunca los implementó?
+    
+    El mensaje asssert: se encuentra en la clase Object y deny: en la clase TAssertable
+    Porque los heredan de las clase padre
+    
 ### 3. En los métodos que hacen las pruebas, 
 ### - ¿Quién es "self"? 
 ### - ¿De qué clase es instancia?
