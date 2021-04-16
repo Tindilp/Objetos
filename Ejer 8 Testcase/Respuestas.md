@@ -20,9 +20,21 @@
     
 ### 3. En los métodos que hacen las pruebas, 
 ### - ¿Quién es "self"? 
+
+    Una instancia de TestEjemplo que implementamos
+    
 ### - ¿De qué clase es instancia?
+
+    Es de la clase TestEjemplo
+
 ### - En respuesta al mensaje #assert:equals: su objeto de test ejecuta un método que hereda, ¿cierto?
+
+    
+
 ### - Busque la implementación del método #assert:equals: que su objeto hereda. ¿Dónde está implementado?
+
+    En la clase TAssertable
+    
 ### - El método #assert:equals: hace referencia a "self". Cuando su objeto ejecuta el método #assert:equals: que hereda, ¿quién es self? ¿de qué clase es? 
 
-
+    Una instancia de TestEjemplo que implementamos, es de la clase TestEjemplo
