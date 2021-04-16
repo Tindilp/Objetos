@@ -26,9 +26,12 @@ La primera expresion nos devuelve 50, ya que el gerente usa su poropio metodo ap
 Expresion 2
 
 1 - Primero llama a gerente usa calcularSueldo => ```Gerente >> calcularSueldo``` (esta en EmpleadoJerarquico)
-2 - El metodo calcularSueldo esta en la clase padre, EmpleadoJerarquic, ese metodo usa dos metodos mas uno es sueldoBasico que esta en empleado, el otro es bonoPorCategoria que esta en EmpleadoJerarquico, primero va a ejecutar el super sueldoBasico que esta en la clase padre Empleado, ==> ```EmpleadoJerarquico >> sueldoBasico ```(esta en empleado)
+
+2 - El metodo calcularSueldo esta en la clase padre, EmpleadoJerarquic, ese metodo usa dos metodos mas uno es sueldoBasico que esta en empleado, el otro es bonoPorCategoria que esta en EmpleadoJerarquico, primero va a ejecutar el super sueldoBasico que esta en la clase padre Empleado, ==> ```EmpleadoJerarquico >> sueldoBasico ```(esta en empleado).
+
 3 - En empleado el metodo montoBasico tiene dos operaciones dentro de el , ```^self montoBasioco - self aportes```, analizando esto el self hace referencia a gerente poruqe disparo el metodo calcularSueldo, por lo tanto los metodos montoBasioco y aportes los buscara primero en gerente, primero hace => ```Gerente >> montoBasico``` que nos devuelve 1000, y luego hace ==> ```Gerente >> aportes``` que nos devuelve 50.
-  Al volver, se hace la operacion entre estos dos resultados y se retorna el valor 950
+  Al volver, se hace la operacion entre estos dos resultados y se retorna el valor 950.
+
 4 - Una vez que volvio el resultado de sueldoBasico a EmpleadoJerarquico queda analizar la otra parte que nos pide el metodo, el cual es self bonoCategoria entonces lo hace ==> ```EmpleadoJerarquico >> bonoPorCategoria ```,  esto nos devuelve 200. Al tener ya el valor de sueldoBasico(950) y el valor de bonoPorCategoria(200), se hace la operacion. y el metodo nos devueve 1150
 
 B - 
